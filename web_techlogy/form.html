@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>student form</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=divice-width, initial-scale=1.0">
+        <meta http-equiv="refresh" content="40">
+        <style>
+            body{
+                background-color: rgb(138, 136, 135);
+            }
+        </style>
+    </head>
+    <body>
+        <section>
+            <div>
+                <div><h1>Student Information</h1></div>
+                <form action="">
+                    <fieldset>
+                       <legend>Student Info:</legend>
+                            <!--student Name-->
+                            <label for="Fname">First Name</label><br>
+                            <input type="text" id="Fname" name="fname" placeholder="eg. JOHN" required><br>
+                            <label for="Lname">Last Name</label><br>
+                            <input type="text" id="Lname" name="lname" placeholder="eg. DOE" required><br><br>
+                            <!--date of the birth-->
+                            <label for="Date">Date of Birth</label>
+                            <input type="date" id="Date" name="date" required><br><br>
+                            <!-- gender of the student-->
+                            <legend>Gender</legend>
+                            <input type="radio" id="male" name="gender" value="Male" required>
+                            <label for="male">Male</label>
+                            <input type="radio"  id="female" name="gender" value="Female" required>
+                            <label for="female">Female</label><br><br>
+                            <!--address-->
+                            <legend>Address</legend>
+                            <label for="postal">Postal Address</label>
+                            <input type="text" id="postal" name="postal" placeholder="P.O.BOX 124 - 30100" required>
+                            <label for="city">City</label>
+                            <input type="text" id="city" name="city" placeholder="City eg Nairobi" required><br><br>
+                            <label for="phone">Telephone No:</label>
+                            <input type="tel" id="phone" name="phone" placeholder="eg. +254-12345678" required pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" placeholder="abc@example.com" required>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Courses</legend>
+                        <select name="" id="">
+                            <option value="default">---Course---</option>
+                            <option value="SE">Software Engineering</option>
+                            <option value="CS">Cyber Security</option>
+                            <option value="BD">Backend Deveploment</option>
+                            <option value="FD">Frontend Deveploment</option>
+                            <option value="CC">Cloud Computing</option>
+                            <option value="ETH">Ethical Hacking</option>
+                        </select>
+                    </fieldset>
+                    <input type="submit" value="Register">
+                    <input type="reset" value="Cancel">
+                </form>
+            </div>
+        </section>
+    </body>
+</html>
